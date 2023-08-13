@@ -1,0 +1,38 @@
+.navPosition{
+  position: fixed;
+  min-width: 296px;
+  min-height: 100vh;
+}
+.main{
+  margin-left: 296px;
+}
+.nav-link{
+  color: $dark;
+  &:hover,&:focus{
+    color: $success;
+  }
+}
+.nav-link.active{
+  color: $success;
+}
+.nav-link.active::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 4px;
+  height: 32px;
+  border-left: 4px solid $success;
+}
+
+.userImg{
+  width: 40px;
+  height: 40px;
+}
+
+.list-group-item{
+  width: 320px;
+}
+.list-group-item.active{
+  background-color: $light;
+  border: 1px solid $gray-400;
+}

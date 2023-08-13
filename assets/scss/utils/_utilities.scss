@@ -1,0 +1,39 @@
+$cus-font-size:(
+    12px,
+    14px,
+
+);
+
+@each $value in $cus-font-size{
+    .fs-#{$value}{
+        font-size: $value;
+    }
+}
+
+
+
+$cus-line-height:(
+    24px,
+    33px,
+);
+
+@each $value in $cus-line-height{
+    .lh-#{$value}{
+        line-height: $value;
+    }
+}
+
+$cus-spacers:(
+    6px,
+    9px,
+    50px
+);
+
+@each $value in $cus-spacers{
+    .me-#{$value}{
+        margin-right: $value;
+    }
+    .mb-#{$value}{
+        margin-bottom: $value;
+    }
+}
